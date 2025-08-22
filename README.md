@@ -30,35 +30,6 @@ This project helps answer:
 
 ---
 
-## 📁 Project Structure
-
-```
-customer-shopping-trends/
-│
-├── data/
-│   └── shopping_trends.csv
-│
-├── sql/
-│   └── scripts/
-│       ├── database.sql
-│       ├── schema.sql
-│       ├── queries.sql
-│   └── images/
-│       ├── top_items_purchased.png
-│       ├── revenue_by_category.png
-│       ├── customer_loyalty_segments.png
-│       ├── subscription_vs_non_subscription.png
-│   ├── README.md ← SQL results and insights
-│
-├── powerbi/
-│   └── customer_trends_dashboard.pbix
-│   └── README.md ← dashboard overview
-│
-├── README.md ← Main project overview
-```
-
----
-
 ## 📊 Analysis Components
 
 ### 1. SQL Analysis
