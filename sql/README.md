@@ -40,7 +40,6 @@ SELECT gender, COUNT(*) AS total
 FROM shopping_trends
 GROUP BY gender;
 ```
-![Gender Breakdown](images/gender_breakdown.png)
 
 ---
 
@@ -52,7 +51,6 @@ GROUP BY location
 ORDER BY total_purchases DESC
 LIMIT 10;
 ```
-![Top Locations](images/top_locations.png)
 
 ---
 
@@ -64,7 +62,6 @@ GROUP BY item_purchased
 ORDER BY times_purchased DESC
 LIMIT 10;
 ```
-![Top Items Purchased](images/top_items_purchased.png)
 
 ---
 
@@ -75,7 +72,6 @@ FROM shopping_trends
 GROUP BY category
 ORDER BY total_revenue DESC;
 ```
-![Revenue by Category](images/revenue_by_category.png)
 
 ---
 
@@ -100,7 +96,6 @@ SELECT season, ROUND(AVG(purchase_amount_usd), 2) AS avg_spend
 FROM shopping_trends
 GROUP BY season;
 ```
-![Seasonal Trends](images/seasonal_trends.png)
 
 ---
 
@@ -111,7 +106,6 @@ SELECT subscription_status, COUNT(*) AS total,
 FROM shopping_trends
 GROUP BY subscription_status;
 ```
-![Subscription Spending](images/subscription_vs_non_subscription.png)
 
 ---
 
@@ -161,7 +155,6 @@ SELECT
 FROM shopping_trends
 GROUP BY loyalty_segment;
 ```
-![Loyalty Segment](images/customer_loyalty_segments.png)
 
 ---
 
@@ -190,22 +183,3 @@ ORDER BY avg_purchase DESC;
 ```
 
 ---
-
-## 📁 Images
-
-Make sure these image files are located in:
-```
-sql/images/
-```
-
-- `top_items_purchased.png`
-- `revenue_by_category.png`
-- `customer_loyalty_segments.png`
-- `subscription_vs_non_subscription.png`
-- `gender_breakdown.png`
-- `top_locations.png`
-- `seasonal_trends.png`
-
----
-
-📌 *This README supports the SQL component of the “Customer Shopping Trends” portfolio project.*
