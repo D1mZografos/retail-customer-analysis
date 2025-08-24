@@ -101,10 +101,10 @@ The Power BI report includes:
 ![Revenue](sql/images/revenue_by_category.png)
 
 ### Loyalty Segments
-![Loyalty](sql/images/customer_loyalty_segments.png)
+![Loyalty](sql/images/customer_loyalty.png)
 
 ### Subscription Comparison
-![Subscription](sql/images/subscription_vs_non_subscription.png)
+![Subscription](sql/images/subscription_impact.png)
 
 ---
 
