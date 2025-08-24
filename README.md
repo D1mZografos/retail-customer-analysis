@@ -46,19 +46,3 @@ We performed SQL-based exploration and created metrics like:
 - Customer loyalty & demographic segmentation
 
 ---
-
-## ✅ Key Insights Summary
-
-| Metric                        | Value                             |
-|-------------------------------|------------------------------------|
-| Total Transactions            | 3,900                             |
-| Top Item Purchased            | Blouse, Jewelry, Pants (171 each) |
-| Top Revenue Category          | Clothing ($104,264)               |
-| Most Common Customer Age      | 25                                |
-| Most Purchases by Location    | Montana (96)                      |
-| Avg Spend w/ Promo            | $59.28                            |
-| Highest Avg Spend by Season   | Fall ($61.56)                     |
-| Highest Avg Spend by Payment  | Debit Card ($60.92)               |
-| Most Loyal Customers Segment  | High Loyalty (3,192)              |
-
----
