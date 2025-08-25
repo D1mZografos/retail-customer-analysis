@@ -31,7 +31,7 @@ The dataset contains **3,900** records with features like:
 
 Shows which product categories are the most popular.
 
-![Category Distribution](./category_distr.png)
+![Category Distribution](images/category_distr.png)
 
 **Insight:** Clothing dominates purchases, followed by Accessories and Footwear.
 
@@ -39,7 +39,7 @@ Shows which product categories are the most popular.
 
 ### 2. 👨‍🦱👩 Purchases by Gender
 
-![Purchases by Gender](./gender_purchases.png)
+![Purchases by Gender](images/gender_purchases.png)
 
 **Insight:** Males account for a significantly higher number of purchases than females.
 
@@ -47,7 +47,7 @@ Shows which product categories are the most popular.
 
 ### 3. 📈 Numerical Feature Distributions
 
-![Distribution and Boxplots](./num_col_distr.png)
+![Distribution and Boxplots](images/num_col_distr.png)
 
 - Age is fairly evenly spread across adult age ranges
 - Purchase amount is well distributed, with minor outliers
@@ -58,7 +58,7 @@ Shows which product categories are the most popular.
 
 ### 4. 🔗 Correlation Matrix
 
-![Correlation Heatmap](./cor_heatmap.png)
+![Correlation Heatmap](images/cor_heatmap.png)
 
 **Insight:**  
 - Strong correlation between `subscription_status`, `discount_applied`, and `promo_code_used`
