@@ -92,20 +92,4 @@ The Power BI report includes:
 
 ---
 
-## 🖼️ Sample Visualizations
-
-### Top 10 Items Purchased
-![Top Items](sql/images/top_items_purchased.png)
-
-### Revenue by Category
-![Revenue](sql/images/revenue_by_category.png)
-
-### Loyalty Segments
-![Loyalty](sql/images/customer_loyalty.png)
-
-### Subscription Comparison
-![Subscription](sql/images/subscription_impact.png)
-
----
-
 📌 *This project is part of a professional data portfolio and showcases end-to-end data analysis using SQL and Power BI.*
