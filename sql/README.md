@@ -19,15 +19,15 @@ sql/
 
 ---
 
-## 🔑 Key SQL Queries
-
-Here are some of the main queries executed in this analysis:
+## 🔑 Key SQL Queries & Visual Results
 
 ### 1. 🧮 Total Purchases
 ```sql
 SELECT COUNT(*) AS total_purchases
 FROM shopping_trends;
 ```
+
+---
 
 ### 2. 👤 Customers by Age
 ```sql
@@ -36,6 +36,9 @@ FROM shopping_trends
 GROUP BY age
 ORDER BY age;
 ```
+![Customers by Age](images/customers_by_age.png)
+
+---
 
 ### 3. 👕 Top Purchased Items
 ```sql
@@ -45,6 +48,9 @@ GROUP BY item_purchased
 ORDER BY times_purchased DESC
 LIMIT 10;
 ```
+![Top Items Purchased](images/top_items_purchased.png)
+
+---
 
 ### 4. 💰 Total Revenue by Category
 ```sql
@@ -53,6 +59,9 @@ FROM shopping_trends
 GROUP BY category
 ORDER BY total_revenue DESC;
 ```
+![Revenue by Category](images/revenue_by_category.png)
+
+---
 
 ### 5. 🌱 Purchases by Season
 ```sql
@@ -61,16 +70,39 @@ FROM shopping_trends
 GROUP BY season
 ORDER BY total_purchases DESC;
 ```
+![Purchases by Season](images/seasonal_trends.png)
 
 ---
 
-## 📸 Visuals
+### 6. 🧾 Subscription vs Non-subscription Spending
+```sql
+SELECT subscription_status, COUNT(*) AS total,
+       ROUND(AVG(purchase_amount_usd), 2) AS avg_spent
+FROM shopping_trends
+GROUP BY subscription_status;
+```
+![Subscription Comparison](images/subscription_vs_non_subscription.png)
 
-Query results are visualized in the main [`README.md`](../README.md) file using screenshots stored under [`sql/images/`](images/).
+---
+
+### 7. 🔁 Customer Loyalty Segments
+```sql
+SELECT
+  CASE
+    WHEN previous_purchases >= 10 THEN 'High Loyalty'
+    WHEN previous_purchases >= 5 THEN 'Mid Loyalty'
+    ELSE 'Low Loyalty'
+  END AS loyalty_segment,
+  COUNT(*) AS customer_count
+FROM shopping_trends
+GROUP BY loyalty_segment;
+```
+![Customer Loyalty Segments](images/customer_loyalty_segments.png)
 
 ---
 
 ## 📌 Next Steps
 
+- Optimize for large datasets
 - Connect to Power BI for dashboarding
-
+- Optional: push to Azure SQL for cloud reporting
