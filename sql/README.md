@@ -21,26 +21,7 @@ sql/
 
 ## 🔑 Key SQL Queries & Visual Results
 
-### 1. 🧮 Total Purchases
-```sql
-SELECT COUNT(*) AS total_purchases
-FROM shopping_trends;
-```
-
----
-
-### 2. 👤 Customers by Age
-```sql
-SELECT age, COUNT(DISTINCT customer_id) AS num_customers
-FROM shopping_trends
-GROUP BY age
-ORDER BY age;
-```
-![Customers by Age](images/customers_by_age.png)
-
----
-
-### 3. 👕 Top Purchased Items
+### 1. 👕 Top Purchased Items
 ```sql
 SELECT item_purchased, COUNT(*) AS times_purchased
 FROM shopping_trends
@@ -52,7 +33,7 @@ LIMIT 10;
 
 ---
 
-### 4. 💰 Total Revenue by Category
+### 2. 💰 Total Revenue by Category
 ```sql
 SELECT category, SUM(purchase_amount_usd) AS total_revenue
 FROM shopping_trends
@@ -63,29 +44,18 @@ ORDER BY total_revenue DESC;
 
 ---
 
-### 5. 🌱 Purchases by Season
-```sql
-SELECT season, COUNT(*) AS total_purchases
-FROM shopping_trends
-GROUP BY season
-ORDER BY total_purchases DESC;
-```
-![Purchases by Season](images/seasonal_trends.png)
-
----
-
-### 6. 🧾 Subscription vs Non-subscription Spending
+### 3. 🧾 Subscription vs Non-subscription Spending
 ```sql
 SELECT subscription_status, COUNT(*) AS total,
        ROUND(AVG(purchase_amount_usd), 2) AS avg_spent
 FROM shopping_trends
 GROUP BY subscription_status;
 ```
-![Subscription Comparison](images/subscription_vs_non_subscription.png)
+![Subscription Comparison](images/subscription_impact.png)
 
 ---
 
-### 7. 🔁 Customer Loyalty Segments
+### 4. 🔁 Customer Loyalty Segments
 ```sql
 SELECT
   CASE
@@ -97,12 +67,10 @@ SELECT
 FROM shopping_trends
 GROUP BY loyalty_segment;
 ```
-![Customer Loyalty Segments](images/customer_loyalty_segments.png)
+![Customer Loyalty Segments](images/customer_loyalty.png)
 
 ---
 
 ## 📌 Next Steps
 
-- Optimize for large datasets
 - Connect to Power BI for dashboarding
-- Optional: push to Azure SQL for cloud reporting
