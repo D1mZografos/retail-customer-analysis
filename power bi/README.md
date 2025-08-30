@@ -3,7 +3,7 @@
 
 ## 🖼️ Final Dashboard
 
-![Customer Shopping Trends Dashboard](../power bi/images/main_dashboard.png)
+![Customer Shopping Trends Dashboard](images/main_dashboard.png)
 
 ---
 
@@ -51,20 +51,19 @@ This **Power BI dashboard** provides a one-page executive summary of customer sh
 
 ### Totals
 **Total Revenue**
-![Total Revenue](../power bi/images/total_revenue.png)
+![Total Revenue](images/total_revenue.png)
 
 **Total Purchases**
-![Total Purchases](../power bi/images/total_purchases.png)
+![Total Purchases](images/total_purchases.png)
 
 ### Promo Metrics
 **Promo Revenue**
-![Promo Revenue](../power bi/images/promo_revenue.png)
+![Promo Revenue](images/promo_revenue.png)
 
 
 ### Calculated Columns
 - **Age Group**: Groups customers into age brackets (e.g., 18-24, 25-34, etc.) for demographic analysis.
-
-    ![Age Group Column](../power bi/images/age_group.png)
+![Age Group Column](images/age_group.png)
 
 ---
 
