@@ -51,18 +51,22 @@ This **Power BI dashboard** provides a one-page executive summary of customer sh
 
 ### Totals
 **Total Revenue**
+
 ![Total Revenue](images/total_revenue.png)
 
 **Total Purchases**
+
 ![Total Purchases](images/total_purchases.png)
 
 ### Promo Metrics
 **Promo Revenue**
+
 ![Promo Revenue](images/promo_revenue.png)
 
 
 ### Calculated Columns
-- **Age Group**: Groups customers into age brackets (e.g., 18-24, 25-34, etc.) for demographic analysis.
+**Age Group**: Groups customers into age brackets (e.g., 18-24, 25-34, etc.) for demographic analysis.
+  
 ![Age Group Column](images/age_group.png)
 
 ---
