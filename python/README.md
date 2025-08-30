@@ -62,20 +62,7 @@ Shows which product categories are the most popular.
 
 **Insight:**  
 - Strong correlation between `subscription_status`, `discount_applied`, and `promo_code_used`
-- No major multicollinearity among most features — good for future ML modeling
-
----
-
-## 📂 Files in This Repository
-
-| File | Description |
-|------|-------------|
-| `shopping_EDA.csv` | Cleaned dataset from SQL for further visualization in Power BI |
-| `shopping_EDA.ipynb` | Full Python notebook containing the EDA |
-| `category_distr.png` | Plot showing distribution of product categories |
-| `gender_purchases.png` | Plot showing purchase count by gender |
-| `cor_heatmap.png` | Correlation matrix of numerical features |
-| `num_col_distr.png` | Distribution and boxplots for numeric columns |
+- No major multicollinearity among most features
 
 ---
 
@@ -91,4 +78,3 @@ Shows which product categories are the most popular.
 
 - Import the cleaned dataset into Power BI
 - Build interactive dashboards for further business insights
-- Optionally apply clustering or classification models in a future iteration
