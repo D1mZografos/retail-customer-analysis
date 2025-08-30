@@ -104,7 +104,7 @@ The Power BI report includes:
 - Customer segments by loyalty and purchase frequency
 - Insights into promo and discount behaviors
 
-📁 See [`powerbi/README.md`](powerbi/README.md) for dashboard explanation.
+📁 See [`power bi/README.md`](powerbi/README.md) for dashboard explanation.
 
 ---
 
