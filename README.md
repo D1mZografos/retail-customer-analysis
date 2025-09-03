@@ -105,3 +105,6 @@ The Power BI report includes:
 - Insights into promo and discount behaviors
 
 📁 See [`power_bi/README.md`](power_bi/README.md) for dashboard explanation.
+
+## 👨‍💻 Author
+*This project was created as a portfolio piece to demonstrate skills in full-cycle data analysis and visualization.*
